@@ -149,13 +149,13 @@ password_input.send_keys(pw)
 
 You will notice that i am sending the variable pw instead of my actual password. This is for security reasons. Make a new file called `secrets.py` and inside it, declare your password as such:
 
-```python:secrets.py
+```python secrets.py
 pw = 'XXXXXX'
 ```
 
 Then, at the top of bot.py write
 
-```python:bot.py
+```python bot.py
 from secrets import pw
 ```
 
