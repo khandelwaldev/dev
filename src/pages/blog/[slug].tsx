@@ -3,7 +3,7 @@ import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import { NextSeo } from "next-seo";
-import MDXComponents from "@/components/MDXComponents";
+import MDXComponents from "@/components/mdxComponents";
 import DateFormatter from "@/components/DateFormatter";
 import UnstyledLink from "@/components/elements/UnstyledLink";
 import Image from "next/image";
@@ -11,6 +11,7 @@ import readingTime from "reading-time";
 import { useRouter } from "next/router";
 import Comments from "@/components/Comments";
 import ScrollToComments from "@/components/ScrollToComments";
+import 'prism-themes/themes/prism-night-owl.css'
 
 export default function Blog({
   source,
@@ -80,7 +81,7 @@ export default function Blog({
         <hr className="my-10 border border-white opacity-70" />
 
         <div id="comments">
-          <Comments />
+          {/* <Comments /> */}
         </div>
 
         <ScrollToComments />
@@ -102,7 +103,9 @@ export async function getStaticProps(
 
   const articleFile = fs.readFileSync(`src/data/blogs/${slug}.mdx`);
 
-  const mdxSource = await serialize(articleFile, { parseFrontmatter: true });
+  const mdxPrism = require('mdx-prism')
+
+  const mdxSource = await serialize(articleFile, { parseFrontmatter: true, mdxOptions: {rehypePlugins: [mdxPrism]}} );
   return {
     props: {
       source: mdxSource,
