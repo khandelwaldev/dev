@@ -10,6 +10,7 @@ import Image from "next/image";
 import readingTime from "reading-time";
 import { useRouter } from "next/router";
 import Comments from "@/components/Comments";
+import ScrollToComments from "@/components/ScrollToComments";
 
 export default function Blog({
   source,
@@ -81,6 +82,8 @@ export default function Blog({
         <div id="comments">
           <Comments />
         </div>
+
+        <ScrollToComments />
       </div>
     </>
   );

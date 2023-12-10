@@ -8,9 +8,9 @@ const Comments: FC<CommentsProps> = () => {
     <Giscus
       id="comments"
       repo="khandelwaldev/dev"
-      repoId="R_kgDOKuSc0A"
+      repoId="R_kgDOK3-l3Q"
       category="General"
-      categoryId="DIC_kwDOKuSc0M4CbBzl"
+      categoryId="DIC_kwDOK3-l3c4CboeQ"
       mapping="pathname"
       term="Welcome to my portfolio"
       reactionsEnabled="1"
