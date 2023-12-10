@@ -81,7 +81,7 @@ export default function Blog({
         <hr className="my-10 border border-white opacity-70" />
 
         <div id="comments">
-          {/* <Comments /> */}
+          <Comments />
         </div>
 
         <ScrollToComments />
