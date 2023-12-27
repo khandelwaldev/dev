@@ -40,6 +40,7 @@ const Hero: FC<HeroProps> = () => {
           <Link
             href={link.href}
             key={link.label}
+            target="_blank"
             className="flex items-center bg-[#2ec4b6]/10 backdrop-blur-sm p-2 rounded-lg hover:border hover:p-[7px] border-[#20a4f3]"
           >
             {link.icon}
