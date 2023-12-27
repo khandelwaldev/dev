@@ -20,7 +20,7 @@ const NowPlaying: React.FC = () => {
     const interval = setInterval(() => {
       // Manually re-fetch data to check for updates
       mutate("/api/spotify");
-    }, 5000);
+    }, 25000);
 
     return () => clearInterval(interval);
   }, []);
