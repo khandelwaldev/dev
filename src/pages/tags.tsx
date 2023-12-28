@@ -1,5 +1,5 @@
 import Link from "next/link";
-// import { NextSeo } from "next-seo";
+import { NextSeo } from "next-seo";
 import { getLatestBlogs } from "@/utils/blogUtils";
 
 interface Blog {
@@ -36,10 +36,10 @@ const TagsPage: React.FC<TagsPageProps> = ({ blogs }) => {
   return (
     <>
       <>
-        {/* <NextSeo
+        <NextSeo
           title="Tags - Dev"
           description="List of all the tags i have used in my blogs"
-        /> */}
+        />
         <div>
           <h1 className="text-4xl font-semibold">All Tags:</h1>
         </div>
