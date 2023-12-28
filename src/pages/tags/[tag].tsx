@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { getBlogsByTag } from "../../utils/blogUtils";
-// import { NextSeo } from "next-seo";
+import { NextSeo } from "next-seo";
 import { FC } from "react";
 import BlogCard from "@/components/elements/BlogCard";
 
@@ -23,10 +23,10 @@ const TagPage: FC<TagPageProps> = ({ tag, blogs }) => {
 
   return (
     <>
-      {/* <NextSeo
+       <NextSeo
         title={`${tag} - Dev`}
         description={`List of all blogs tagged with ${tag}`}
-      /> */}
+       /> 
       <div>
         <h1 className="text-3xl font-medium text-white/50">
           Tag: <span className="text-white">{tag}</span>
