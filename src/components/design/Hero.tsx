@@ -22,7 +22,7 @@ const Hero: FC<HeroProps> = () => {
             src={`https://github.com/khandelwaldev.png`}
             width={200}
             height={200}
-            alt="Github avatar"
+            alt="Dev Khandelwal"
             className="rounded-full cursor-none"
           />
         </div>
