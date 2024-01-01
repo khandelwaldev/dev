@@ -20,7 +20,7 @@ const About: FC = () => {
             <span className="text-white font-medium underline cursor-none">
               Dev
             </span>
-            , a 19-year-old student belonging to the Homo Sapiens species.
+            , a 18-year-old student belonging to the Homo Sapiens species.
             I&apos;m a brother, a son, a friend, a self-taught web developer and
             programmer, an open-source enthusiast, and an extreme melophile.
           </p>
