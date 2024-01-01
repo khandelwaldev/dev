@@ -63,7 +63,7 @@ const Footer: FC = () => {
       </div>
       <hr className="border border-white/40 opacity-30 mt-6 mb-3" />
       <div className="flex flex-col gap-2 sm:flex-row sm:justify-between h-[70px] sm:h-[50px] items-center">
-        <p>&copy; 2023, Dev</p>
+        <p>&copy; 2024, Dev</p>
         <div className="flex items-center gap-4">
           {socialLiks.map((link) => (
             <Link
