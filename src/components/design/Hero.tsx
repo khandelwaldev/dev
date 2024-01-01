@@ -29,7 +29,7 @@ const Hero: FC<HeroProps> = () => {
       </div>
       <div className="mt-16">
         <p className="text-xl opacity-80">
-          {`I'm`} <strong className="text-[#ff3366]">Dev</strong>, a 19-year-old
+          {`I'm`} <strong className="text-[#ff3366]">Dev</strong>, a 18-year-old
           student belonging to the Homo Sapiens species. {`I'm`} a brother, a
           son, a friend, a self-taught web developer and programmer, an
           open-source enthusiast, and an extreme melophile.
