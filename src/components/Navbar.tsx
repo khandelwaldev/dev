@@ -12,7 +12,7 @@ const links: Link[] = [
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Guestbook", href: "/guestbook" },
-  { label: "Contact", href: "/contact" },
+  { label: "My Socials", href: "https://slyro-links.vercel.app" },
 ];
 
 const Navbar: FC = () => {

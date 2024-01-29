@@ -4,6 +4,6 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/api/spotify": "pages/api/spotify.js",
-  "/blog/[slug]": "pages/blog/[slug].js",
-  "/blog": "pages/blog.js"
+  "/blog": "pages/blog.js",
+  "/404": "pages/404.js"
 }

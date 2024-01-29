@@ -63,7 +63,7 @@ const About: FC = () => {
             introverted. So, if you want to talk about anything, just hit me up,
             and I&apos;ll get back to you once I&apos;m active online. All my
             social links are listed{" "}
-            <UnderlineLink href={`/links`} className="link">
+            <UnderlineLink href={`https://slyro-links.vercel.app`}>
               {" "}
               here
             </UnderlineLink>
