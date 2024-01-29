@@ -79,11 +79,27 @@ export default async function handler(
         response.data.currently_playing_type !== 'track'
       ) {
         //? s-maxage=180 because song usually lasts 3 minutes
+        const badgeData = {
+          schemaVersion: 1,
+          label: 'Now Playing',
+          message: 'Not Listening',
+          color: 'inactive'
+        }
+
         res.setHeader(
           'Cache-Control',
           'public, s-maxage=180, stale-while-revalidate=90'
         );
         return res.status(200).json({ isPlaying: false });
+      }
+
+      const badgeData = {
+        schemaVersion: 1,
+        label: 'Now Playing',
+        message: `${response.data.item.name} by ${response.data.item.album.artists
+          .map((artist) => artist.name)
+          .join(', ')}`,
+          color: 'brightgreen'
       }
 
       const data = {
