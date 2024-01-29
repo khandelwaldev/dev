@@ -1,6 +1,11 @@
 import axios from 'axios';
 import { NextApiRequest, NextApiResponse } from 'next';
 import querystring from 'querystring';
+import Cors from 'cors';
+
+const cors = Cors({
+  methods: ['GET'],
+});
 
 const {
   SPOTIFY_CLIENT_ID: client_id,
@@ -60,6 +65,10 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  // Use cors middleware to handle CORS
+  const next = () => {};
+  await cors(req, res, next);
+
   if (req.method === 'GET') {
     try {
       const response = await getNowPlaying();
