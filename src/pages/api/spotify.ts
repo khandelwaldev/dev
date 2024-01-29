@@ -117,7 +117,7 @@ export default async function handler(
         'Cache-Control',
         'public, s-maxage=180, stale-while-revalidate=90'
       );
-      return res.status(200).json(data);
+      return res.status(200).json(badgeData);
     } catch (error) {
       console.error('Error fetching Spotify data:', error);
       return res.status(500).json({ error: 'Internal Server Error' });
