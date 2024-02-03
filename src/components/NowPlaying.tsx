@@ -71,7 +71,7 @@ const NowPlaying: React.FC = () => {
             <div>
               <p className="line-clamp-1">Not Listening</p>
               <p className="text-white opacity-[50%] text-base line-clamp-1">
-                Spotify-
+                Currently, I'm offline
               </p>
             </div>
           </div>
