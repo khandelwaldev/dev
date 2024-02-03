@@ -26,6 +26,7 @@ const Footer: FC = () => {
   return (
     <div>
       <div className="mb-10">
+        <h1 className="text-base font-medium mb-3">See what I'm listening on Spotify right now.</h1>
         <NowPlaying />
       </div>
       <div className="flex flex-col-reverse gap-8 sm:flex-row sm:justify-between">
