@@ -6,9 +6,9 @@ export const ProjectsData = [
     link: "https://innerbeat.vercel.app",
   },
   {
-    name: "DevFolio",
-    bio: "My personal website and blog built with JavaScript, Next.js, and Tailwind CSS",
-    image: "/images/projects/devfolio.png",
-    link: "",
+    name: "UTube",
+    bio: "UTube web is alternative of YouTube where you can watch YouTube videos without any ads",
+    image: "/images/projects/utube.png",
+    link: "https://utube-web.vercel.app",
   },
 ];
