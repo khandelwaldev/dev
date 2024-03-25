@@ -3,7 +3,7 @@ export const ProjectsData = [
     name: "InnerBeat",
     bio: "A music application made in nodejs which provides ad-free music without any premium plan",
     image: "/images/projects/innerbeat.png",
-    link: "",
+    link: "https://innerbeat.vercel.app",
   },
   {
     name: "DevFolio",
